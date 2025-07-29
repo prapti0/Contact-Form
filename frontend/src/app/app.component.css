@@ -1,0 +1,71 @@
+/* src/app/app.component.css */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.app-header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  color: white;
+}
+
+.app-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0;
+  opacity: 0.9;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.main-tabs {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px 16px 0 0;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.tab-content {
+  background: transparent;
+}
+
+/* Override Material Design tab styles */
+::ng-deep .mat-mdc-tab-group {
+  --mdc-tab-indicator-active-indicator-color: white;
+}
+
+::ng-deep .mat-mdc-tab .mdc-tab__text-label {
+  color: white !important;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+::ng-deep .mat-mdc-tab-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .main-content {
+    padding: 0 0.5rem;
+  }
+}

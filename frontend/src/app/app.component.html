@@ -1,0 +1,15 @@
+<!-- src/app/app.component.html -->
+<div class="app-container">
+  <header class="app-header">
+    <h1>{{ title }}</h1>
+    <p class="subtitle">Manage your professional contacts efficiently</p>
+    <nav>
+      <button mat-button routerLink="/" routerLinkActive="active">Add Contact</button>
+      <button mat-button routerLink="/contacts" routerLinkActive="active">View Contacts</button>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
